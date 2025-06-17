@@ -37,6 +37,7 @@ public class TaskList {
         Task current = head;
         while (current != null) {
             System.out.println(current.getDescription() + ": " + (current.isComplete() ? "Complete" : "Incomplete"));
+            current = current.next;
         }
     }
 }
